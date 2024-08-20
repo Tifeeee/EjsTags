@@ -19,7 +19,7 @@ app.get("/user",(req,res)=>{
     fetch("https://api.github.com/users")
     .then((response)=>response.json())
     .then((data)=>{
-        res.render("github", {data:data})
+        res.render("Github", {data:data})
     })
 })
 
